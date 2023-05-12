@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28번문제</title>
+    <script>
+    //프롬프트 함수는 데이터를 입력하면 모두 문자취급됨
+    //해결책: 숫자로 처리하길 원할경우, 
+    //개발자가 프로그래밍 언어로 강제 정수화 parseInt(대상문자열) 라는 내장 함수를 사용하면 됨.
+    let n=prompt("원하시는 수를 입력하시오");
+    n = parseInt(n); //정수로변환
+    
+    /*입력값보다 1작은수; 입력값보다1큰수; */
+
+    let startNum=n-1;
+    let endNum=n+1;
+
+    for(let i=startNum; i<=endNum; i++){
+      document.write(i);  
+    }
+
+    //document.write();
+    //for(){}
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

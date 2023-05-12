@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블생성</title>
+    <script>
+        //사용자로부터 건물의 두께를 입력받기
+        let b=prompt("원하시는 두께는?");
+
+        //사용자로부터 층수 입력받기
+        let f=parseInt(prompt("원하시는 층수는?"));
+
+        //사용자로부터 호수 입력받기
+        let h=parseInt(prompt("원하시는 층수는?"));
+
+        //다중반복문(보통 이중반복문까지)
+        document.write("<table border= '"+b+"+px' width='700px'>");
+           for(let i=f; i>=1; i--){
+                document.write("<tr>");
+
+                    for(let a=1; a<=h; a++){
+                        document.write("<td>"+ i + "층" + a +"호</td>");
+                    }
+                document.write("</tr>");
+            }
+
+       
+
+    </script>
+</head>
+<body>
+<!--
+    <table border="1px">
+        <tr>
+            <td>301</td>
+            <td>302</td>
+            <td>303</td>
+            <td>304</td>
+        </tr>
+        <tr>
+            <td>201</td>
+            <td>202</td>
+            <td>203</td>
+            <td>204</td>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>102</td>
+            <td>103</td>
+            <td>104</td>
+        </tr>
+    </table>
+-->
+</body>
+</html>
